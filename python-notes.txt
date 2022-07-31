@@ -1,0 +1,55 @@
+--- null in python: None 
+--- in / not in
+--- 'c' * 2 --> 'cc'
+--- access to nested dict: person['company']['name']
+--- while loop:
+nb = 10
+while nb > 0:
+    list.append(value)
+    nb -= 1
+--- for loop:
+for i in range(10)
+for i in range(len(ch))
+for i, value in enumerate(list_of_ch)
+--- variable global:
+def test():
+  global b = 5 // b now accessible from the outside test function
+--- lambda:
+(lambda param1, param2: param1 **param2)(2, 3)
+--- map/filter:
+map(function, list)
+filter(function, list)
+--- *args: get all param inside an array (array with index)
+--- **args: get all param inside an accociate array (array with keys)
+--- file:
+file = open('file-path', 'r+/w+/a+')
+  - file.write(str)
+  - file.writelines(list)
+  - file.read()
+  - file.readline()
+  - file.readlines()
+--- inheritance:
+class Student(Person):
+  def __init__(self):
+    super().__init__()
+--- useful OOP helpers
+hasattr(P, 'nom')
+issubclass(Student, Person)
+--- abstract:
+@abstractmethod
+--- static:
+@classmethod
+--- exception:
+try:
+  // ...
+except ValueError as error:
+  print('log error ...')
+  print(error)
+  print(type(error))
+else:
+  // ...
+finaly:
+  // ...
+
+- Lance exception
+  raise ValueError('error message!')
